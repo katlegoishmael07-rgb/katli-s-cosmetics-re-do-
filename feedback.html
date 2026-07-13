@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback | Katli's Cosmetics</title>
+    <meta name="description" content="Share your feedback about your experience with Katli's Cosmetics.">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/jpeg" href="images/logo.jpg">
+</head>
+
+<body>
+    <section class="hero-section has-image page-hero" style="background-image: url('images/acrylic-nails2.jpg');">
+
+        <header class="site-header">
+            <div class="header-inner">
+                <a href="index.html" class="brand">
+                    <img src="images/logo.jpg" alt="Katli's Cosmetics logo" class="logo" width="66" height="66">
+                    <span class="brand-name">Katli's Cosmetics</span>
+                </a>
+                <nav class="navbar navbar-expand-lg p-0">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="mainNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                            <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                            <li class="nav-item"><a class="nav-link active" href="feedback.html">Feedback</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <div class="hero-content container">
+            <span class="eyebrow">We're Listening</span>
+            <h1>Customer Feedback</h1>
+            <p>Tell us about your experience.</p>
+        </div>
+    </section>
+
+    <section class="container mt-5 pt-3 pb-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-7">
+                <div class="service-cards p-5 text-start">
+
+                    <form id="feedbackForm" novalidate>
+
+                        <div class="mb-3">
+                            <label class="form-label" for="feedbackName">Name</label>
+                            <input type="text" id="feedbackName" name="name" class="form-control" required minlength="2">
+                            <div class="invalid-feedback">Please enter your name.</div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label" for="feedbackRating">Rating</label>
+                            <select class="form-control" id="feedbackRating" name="rating" required>
+                                <option value="" selected disabled>Choose a rating</option>
+                                <option>Excellent</option>
+                                <option>Good</option>
+                                <option>Average</option>
+                                <option>Poor</option>
+                            </select>
+                            <div class="invalid-feedback">Please choose a rating.</div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label" for="feedbackMessage">Feedback</label>
+                            <textarea id="feedbackMessage" name="message" class="form-control" rows="4" required minlength="5"></textarea>
+                            <div class="invalid-feedback">Please share a few words of feedback.</div>
+                        </div>
+
+                        <button type="submit" class="btn btn-dark">Send Feedback</button>
+
+                        <p class="form-note">Submitting opens your email app with your feedback ready to send to Katli's Cosmetics.</p>
+                        <div class="form-success" id="feedbackSuccess">Thank you for your feedback! Your email app should now be open.</div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer mt-5">
+        <ul class="social-links">
+            <li><a href="https://www.tiktok.com/@gwenmoralesss?_r=1&_t=ZS-96WnMBDbLxl" target="_blank" rel="noopener">TikTok</a></li>
+            <li><a href="https://www.instagram.com/kls_tto?igsh=MWN1cXE5YjBpYnhsMQ==" target="_blank" rel="noopener">Instagram</a></li>
+        </ul>
+        <p> @2026 Katli's Cosmetics. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
